@@ -5,6 +5,7 @@ workflows:
     environment:
       flutter: stable
     scripts:
+<<<<<<< HEAD
       - name: Navigate to the right directory
         script: cd /Users/builder/clone
       - name: Create Flutter project if missing
@@ -12,8 +13,9 @@ workflows:
           if [ ! -f "pubspec.yaml" ]; then
             flutter create .
           fi
+=======
+>>>>>>> a900bf584c6c06f4e7ba70d243bae0d8a40cf15c
       - name: Install dependencies
         script: flutter pub get
       - name: Build iOS
         script: flutter build ios --no-codesign
-
