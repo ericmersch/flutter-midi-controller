@@ -23,36 +23,3 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-
-# .gitignore content
-
-# Flutter/Dart/Pub related
-**/build/
-**/ios/Flutter/Flutter.podspec
-**/ios/.symlinks
-**/ios/Pods
-**/ios/.generated
-**/android/.gradle
-**/android/app/debug.keystore
-**/.dart_tool/
-**/.packages
-**/pubspec.lock
-**/.flutter-plugins
-**/.flutter-plugins-dependencies
-**/.idea/
-**/.vscode/
-**/windows/
-**/macos/
-**/linux/
-
-# IDE related
-**/.DS_Store
-**/.gradle
-**/.metadata
-
-# Generated files
-**/*.iml
-**/*.ipr
-**/*.iws
-**/*.jks
-
