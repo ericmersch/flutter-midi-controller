@@ -5,8 +5,13 @@ workflows:
     environment:
       flutter: stable
     scripts:
-      - name: Create Flutter project
-        script: flutter create .
+      - name: Create Flutter project if missing
+        script: |
+          if [ ! -f "pubspec.yaml" ]; then
+            flutter create .
+          fi
+      - name: Install dependencies
+        script: flutter pub get
       - name: Build iOS
         script: flutter build ios --no-codesign
 
