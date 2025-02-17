@@ -1,0 +1,12 @@
+workflows:
+  flutter-build:
+    name: Flutter Build
+    instance_type: mac_mini
+    environment:
+      flutter: stable
+    scripts:
+      - name: Create Flutter project
+        script: flutter create .
+      - name: Build iOS
+        script: flutter build ios --no-codesign
+
