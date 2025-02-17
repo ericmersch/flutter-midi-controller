@@ -1,0 +1,14 @@
+name: mon_projet_flutter
+description: Un projet Flutter simple
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
