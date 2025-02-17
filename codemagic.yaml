@@ -9,4 +9,7 @@ workflows:
         script: flutter pub get
       - name: Build iOS
         script: flutter build ios --no-codesign
+      - name: Setup Flutter Project
+         script: |
+         flutter create .
 
